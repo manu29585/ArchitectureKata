@@ -393,11 +393,13 @@ entity BookingStatusType
 entity BookingStatusHistory
 entity BookingStatusHistoryType
 
+entity email
+
 entity PNR
 
 entity TravelReport
 
-node Dashboard {
+package Dashboard {
     entity "Itinerary" 
     TravelReport --> Itinerary: Creates using
 }
@@ -426,6 +428,9 @@ EndUser --> Itinerary: Pays
 EndUser --> Itinerary: Reschedules
 EndUser --> Itinerary: Cancels
 
+EndUser --> email: Filters
+EndUser --> email: Whitelists
+
 Admin --> RoadWarriorSystem: Login
 Admin --> RoadWarriorSystem: Creates
 Admin --> RoadWarriorSystem: Views
@@ -438,6 +443,8 @@ SystemUser --> HIS: GenerateToken
 SystemUser --> HIS: GetHotelInformation
 SystemUser --> CRIS: GenerateToken
 SystemUser --> CRIS: GetCarRentalInformation
+
+SystemUser --> Itinerary: Updates
 
 @enduml
 ```
