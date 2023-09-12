@@ -50,6 +50,23 @@ Team Members
       - [DataIntegrity]
       - [Confidentiality]
 
+## Target for 13/09
+
+- Business description and context setting
+- Sub system interaction with high level choice of technologies/tooling
+- High level architecture finalized
+
+## Target for 14/09
+
+- All sub systems High level design
+- Testability
+- ADR
+
+## Target for 15/09
+
+- NFR handling and associated diagram representation
+- Final flow walkthrough
+
 ## Systematic Architecture Design
 
 For this architecture challenge we have followed the systematic architecture design (SAD) technique. ![SAD](.media/SAD.png)
