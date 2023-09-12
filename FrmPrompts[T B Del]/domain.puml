@@ -1,0 +1,89 @@
+@startuml
+
+!define ENTITY class
+
+package "Online Trip Management Dashboard" {
+  ENTITY User {
+    +UserID
+    +Username
+    +Email
+    +Password
+    +SocialMediaProfiles
+    +Login()
+    +Register()
+    +UpdateProfile()
+    +ShareTripInformation()
+  }
+
+  ENTITY Reservation {
+    +ReservationID
+    +TripID
+    +ReservationType
+    +ReservationDetails
+    +ReservationStatus
+    +Date
+    +Time
+    +CreateReservation()
+    +UpdateReservation()
+    +DeleteReservation()
+    +FilterWhitelistedEmails()
+    +InterfaceWithExternalSystems()
+    +RemoveFromDashboard()
+  }
+
+  ENTITY Trip {
+    +TripID
+    +TripName
+    +StartDate
+    +EndDate
+    +CreateTrip()
+    +UpdateTrip()
+    +DeleteTrip()
+  }
+
+  ENTITY EmailPoller {
+    +PollEmail()
+    +WhitelistEmails()
+    +ProcessTravelRelatedEmails()
+  }
+
+  ENTITY Dashboard {
+    +DisplayReservations()
+    +GroupReservationsByTrip()
+    +AutoRemoveCompletedTripItems()
+    +ShareTripInformation()
+  }
+
+  ENTITY Analytics {
+    +GatherAnalyticalDataFromTrips()
+    +GenerateEndOfYearSummaryReports()
+  }
+
+  ENTITY Interface {
+    +ProvideRichUserInterface()
+    +SupportWebAndMobilePlatforms()
+  }
+
+  ENTITY ExternalSystems {
+    +AirlineInterface
+    +HotelInterface
+    +CarRentalInterface
+    +SocialMediaSites
+  }
+
+  User -- Reservation : Manages
+  User -- Dashboard : Accesses
+  User -- Analytics : Views
+  Reservation -- Trip : Belongs To
+  Reservation -- EmailPoller : Interfaces With
+  EmailPoller -- ExternalSystems : Integrates With
+  Dashboard -- Trip : Organizes
+  Analytics -- Reservation : Gathers Data From
+  Analytics -- Trip : Gathers Data From
+  Interface -- User : Used By
+  Interface -- Dashboard : Presents Data
+  Interface -- Analytics : Presents Data
+  Interface -- ExternalSystems : Interfaces With
+}
+
+@enduml
