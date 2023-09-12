@@ -35,7 +35,7 @@ Team Members
     - [UserJourney]
     - [SequenceDiagram]
     - [DeploymentView]
-    - [WireFrames]
+    - [WireFrames***]
     - [SystemLevelViews]
     - [CICD]
   - [Testability]
