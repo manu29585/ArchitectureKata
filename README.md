@@ -12,12 +12,43 @@ Team Members
 
 ## Table of Contents
 
-- [SAD](#systematic-architecture-design)
+- Introduction
+- Business Context
+  - Requirements  
+  - Constraints
+  - Risks  
+  - Assumptions
+- [ArchitectureApproach](#systematic-architecture-design)
   - [Idea](#idea)
   - [Requirements](#requirements)
   - [DomainModel](#domain-model)
   - [Environment](#environment)
   - [NFR](#nfr)
+  - [HighLevelArchitecture]
+  - [KeySubsystems&Design]  
+  - [ADR]
+    - [TypeOfArchitecture]
+    - [CommunicationProtocol]
+    - [DeploymentStrategy]
+    - [Scalability]
+  - [Diagram]
+    - [UserJourney]
+    - [SequenceDiagram]
+    - [DeploymentView]
+    - [WireFrames]
+    - [SystemLevelViews]
+    - [CICD]
+  - [Testability]
+    - [TestStrategy]
+  - [CrossCuttingConcerns]
+    - [Logging]
+    - [Auditing]
+    - [Monitoring]
+      - [AppInsights]
+    - [Security]
+      - [RateLimiting]
+      - [DataIntegrity]
+      - [Confidentiality]
 
 ## Systematic Architecture Design
 
@@ -76,6 +107,9 @@ The requirements are defined here [Requirements](Requirements.md)
 | 7) | Security |  [x] | As this system stores user information we need to define architecture functions to handle security. |
 
 Other topics to consider
-Cost: Since we are talking about having multiple services and these services will be deployed across the continents. The cost is something we need to keep in mind.  
 
-[Link to hackmd for collaboration](https://hackmd.io/HgB9KCpwTTO6bBkDJKlAMg)
+Cost: Since we are talking about having multiple services and these services will be deployed across the continents. The cost is something we need to keep in mind.  
+Configurable:
+Confidentiality:
+Integrity:
+Authentication
