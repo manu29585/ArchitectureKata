@@ -75,6 +75,7 @@ The requirements are defined here [Requirements](Requirements.md)
 | 6) | Extensibility |  [x] | As the system might have multi vendor, multi service support, we need to make sure that there is no vendor lock-in and the system is easily extensible. |
 | 7) | Security |  [x] | As this system stores user information we need to define architecture functions to handle security. |
 
-
+Other topics to consider
+Cost: Since we are talking about having multiple services and these services will be deployed across the continents. The cost is something we need to keep in mind.  
 
 [Link to hackmd for collaboration](https://hackmd.io/HgB9KCpwTTO6bBkDJKlAMg)
