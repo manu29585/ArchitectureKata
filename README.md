@@ -24,7 +24,7 @@ Team Members
   - [DomainModel](#domain-model)
   - [Environment](#environment)
   - [NFR](#nfr)
-  - [HighLevelArchitecture]
+  - [HighLevelArchitecture](#architecture)
   - [KeySubsystems&Design]  
   - [ADR]
     - [TypeOfArchitecture]
