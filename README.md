@@ -60,7 +60,12 @@ Team Members
 
 - All sub systems High level design
 - Testability
-- ADR
+- ADR 
+  - API Gateway
+  - Choice of UI technologies - Xmarin/ts/js - How to make it compatible with Android/iOS/Web?
+  - Communication technology(rest/grpc/websocket) for micro service internal communication
+  - Choice of DB (AWS Aurora) (Because of less read latency < 20ms>)
+  - Choice of caching (Redis/Elasticache)
 
 ## Target for 15/09
 
