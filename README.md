@@ -105,7 +105,6 @@ We also provide data insights on the basis on past travel history and recommend 
 - Customer Support
 - Scaling
 
-
 ## Systematic Architecture Design
 
 For this architecture challenge we have followed the systematic architecture design (SAD) technique. ![SAD](.media/SAD.png)
@@ -169,3 +168,24 @@ Configurable:
 Confidentiality:
 Integrity:
 Authentication
+
+## Architecture
+
+- In order to chose the architecture, we followed the [Systematic Architecture Design](#systematic-architecture-design).
+- In this approach, we first started with the problem domain and then moved toward a solution domain.
+- In the solution domain, three different set of architectures.
+
+1) Draft Architecture
+  a) Draft architecture is a result of problem space.
+  b) Independent of Technology & interfaces.
+
+2) Reference Architecture
+  a) This includes technical details.
+  b) Uses the existing reference templates. For example, any other existing architecture which might have similar use cases.
+
+3) Baseline Architecture
+  a) Contains NFR solutions
+  b) This architecture contains the architecture for existing environment. 
+
+- After going through this iterative process we decided to go ahead with the ![MicroserviceArchitecture](.media/ArchitectureStyleSheet.png).
+- For deciding the underlying architecture we created an [ADR](ADR's/ADR-001-MicroservicesArchitecture.md)
