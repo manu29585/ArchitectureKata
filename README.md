@@ -173,7 +173,7 @@ Authentication
 
 - In order to chose the architecture, we followed the [Systematic Architecture Design](#systematic-architecture-design).
 - In this approach, we first started with the problem domain and then moved toward a solution domain.
-- In the solution domain, three different set of architectures.
+- In the solution domain, we worked on three different set of architectures.
 
 1) Draft Architecture
   a) Draft architecture is a result of problem space.
@@ -185,7 +185,7 @@ Authentication
 
 3) Baseline Architecture
   a) Contains NFR solutions
-  b) This architecture contains the architecture for existing environment. 
+  b) This architecture contains the architecture for existing environment.
 
 - After going through this iterative process we decided to go ahead with the ![MicroserviceArchitecture](.media/ArchitectureStyleSheet.png).
 - For deciding the underlying architecture we created an [ADR](ADR's/ADR-001-MicroservicesArchitecture.md)
