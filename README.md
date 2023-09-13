@@ -67,6 +67,45 @@ Team Members
 - NFR handling and associated diagram representation
 - Final flow walkthrough
 
+## Introduction
+
+"The Road Warrior" is an online trip management company which allows travelers to see all the of their existing reservations organized by the trip. Below is the list of key features which this application provides:
+
+- User-Friendly Dashboard: Provides an intuitive and user-friendly dashboard that allows travelers to easily view, manage, and organize their reservations.
+
+- Reservation Aggregation: The core functionality is aggregating reservations from various sources, including flights, hotels, car rentals etc.
+
+- Trip Organization: Allow users to organize their reservations into trips. This could involve creating tags for each trip, making it easy for users to access the details of a specific journey.
+
+- Booking Management: Enables users to make changes to their reservations directly through the dashboard, such as modifying flight dates or hotels.
+
+- Real-Time Updates: Ensures that the dashboard provides real-time updates on flight statuses, gate changes, delays, and other relevant information.
+
+- Notification System: Implements a notification system that alerts users about upcoming trips, booking confirmations, or changes to their reservations.
+
+## Business Context
+
+In today's world when you plan for a trip, there are a lot of things to consider. It starts from booking the flight to the destination, to then booking a hotel for your stay. But how do you go from Airport to Hotel? Oh yes, you need car rentals as well.
+There are lot of options out there which provides the travelers the best possible options to do all the booking mentioned above like Expedia, Thomas Cook, MakeMyTrip and so on.
+Now, if there are already so many option available, why do we need yet another travel website?
+First of all, "The Road Warrior" is not just another travel website. It's a travel aggregation solution for all the travel needs.
+Let's think of one scenario, where as a user, you have booked your flight ticket from Expedia, booked your stay in AirBnb and have booked the car in Uber. On the day of travel you have to continuously keep switching between different apps to check your bookings.
+Well no longer, this is where "The Road Warrior" comes in. We will aggregate all your booking under one trip so you will never have to bother about checking the status of your booking in multiple applications.
+I know what you might be thinking, I have already gone through the hassle of booking the travel from multiple applications, I don't want to go through the trouble of adding these details to another app to get the updates. Don't worry, "The Road Warrior" has got you covered.
+Our app will automatically look for for travel booking and will add these under a single trip.
+We also provide data insights on the basis on past travel history and recommend accordingly.
+"The Road Warrior" is your  travel buddy.
+
+### Business Considerations
+
+- Data Privacy and Security
+- Monetization
+- Global Reach
+- Travel Recommendations
+- Customer Support
+- Scaling
+
+
 ## Systematic Architecture Design
 
 For this architecture challenge we have followed the systematic architecture design (SAD) technique. ![SAD](.media/SAD.png)
