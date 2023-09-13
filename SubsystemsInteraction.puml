@@ -1,0 +1,49 @@
+@startuml subsysteminteraction
+skinparam nodeStyle awesome
+
+allow_mixing
+
+node EmailService
+node TravelServiceProvider
+node TripOrganizer
+node RoadWarriorDashboardManager
+node DataAnalyticsManagement
+node TripSummaryProvider
+node VendorManagement
+node IdentityManagement
+node SocialMediaService
+node UserConfigurationManagement
+node DataManagement
+node TripSyncManager
+node NotificationManager
+node UserManagement
+node APIGateway
+node CustomerServiceAndHelpdeskManagement
+
+RoadWarriorDashboardManager --|> APIGateway
+APIGateway --|> EmailService
+APIGateway --|> TripOrganizer
+APIGateway --|> DataAnalyticsManagement
+APIGateway --|> TripSummaryProvider
+APIGateway --|> SocialMediaService
+APIGateway --|> UserConfigurationManagement
+EmailService --|> TravelServiceProvider
+EmailService --|> SocialMediaService
+TravelServiceProvider --|> DataManagement
+TravelServiceProvider --|> VendorManagement
+TravelServiceProvider --|> TripSyncManager
+TripOrganizer --|> DataManagement
+DataAnalyticsManagement --|> DataManagement
+TripSummaryProvider --|> DataAnalyticsManagement
+TripSummaryProvider --|> DataManagement
+VendorManagement --|> DataManagement
+APIGateway --|> IdentityManagement
+IdentityManagement --|> UserManagement
+SocialMediaService --|> RoadWarriorDashboardManager
+UserConfigurationManagement --|> DataManagement
+DataManagement --|> DataManagement
+TripSyncManager --|> TravelServiceProvider
+NotificationManager --|> UserManagement
+APIGateway --|> CustomerServiceAndHelpdeskManagement
+
+@enduml
