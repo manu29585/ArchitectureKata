@@ -3,47 +3,95 @@ skinparam nodeStyle awesome
 
 allow_mixing
 
-node EmailService
-node TravelServiceProvider
-node TripOrganizer
-node RoadWarriorDashboardManager
-node DataAnalyticsManagement
-node TripSummaryProvider
-node VendorManagement
-node IdentityManagement
-node SocialMediaService
-node UserConfigurationManagement
-node DataManagement
-node TripSyncManager
-node NotificationManager
-node UserManagement
-node APIGateway
-node CustomerServiceAndHelpdeskManagement
+package "Email Service" {
+    EMAIL_SERVICE -right- TRAVEL_SERVICE_PROVIDER : Interfaces
+    EMAIL_SERVICE -right- SOCIAL_MEDIA_SERVICE : Interfaces
+    EMAIL_SERVICE -right- USER_CONFIGURATION_MGMT : Interfaces
+    EMAIL_SERVICE -right- USER_MANAGEMENT : Interfaces
+    EMAIL_SERVICE -right- DATA_MANAGEMENT : Interfaces
+    EMAIL_SERVICE -right- EVENTHUB_COMMUNICATION_MGR : Interfaces
+    EMAIL_SERVICE -right- NOTIFICATION_MANAGER : Interfaces
+}
 
-RoadWarriorDashboardManager --|> APIGateway
-APIGateway --|> EmailService
-APIGateway --|> TripOrganizer
-APIGateway --|> DataAnalyticsManagement
-APIGateway --|> TripSummaryProvider
-APIGateway --|> SocialMediaService
-APIGateway --|> UserConfigurationManagement
-EmailService --|> TravelServiceProvider
-EmailService --|> SocialMediaService
-TravelServiceProvider --|> DataManagement
-TravelServiceProvider --|> VendorManagement
-TravelServiceProvider --|> TripSyncManager
-TripOrganizer --|> DataManagement
-DataAnalyticsManagement --|> DataManagement
-TripSummaryProvider --|> DataAnalyticsManagement
-TripSummaryProvider --|> DataManagement
-VendorManagement --|> DataManagement
-APIGateway --|> IdentityManagement
-IdentityManagement --|> UserManagement
-SocialMediaService --|> RoadWarriorDashboardManager
-UserConfigurationManagement --|> DataManagement
-DataManagement --|> DataManagement
-TripSyncManager --|> TravelServiceProvider
-NotificationManager --|> UserManagement
-APIGateway --|> CustomerServiceAndHelpdeskManagement
+package "Travel Service Provider" {
+    TRAVEL_SERVICE_PROVIDER -down-> API_GATEWAY : Interfaces
+    TRAVEL_SERVICE_PROVIDER -down-> TRIP_ORGANIZER : To get details
+}
+
+package "Trip Organizer" {
+    TRIP_ORGANIZER -up-> DATA_MANAGEMENT : Manages trip details
+    TRIP_ORGANIZER -up-> TRAVEL_SERVICE_PROVIDER : PNR Handling
+}
+
+package "Road Warrior Dashboard Manager" {
+    ROAD_WARRIOR_DASHBOARD_MANAGER -up- DATA_MANAGEMENT : Uses
+    ROAD_WARRIOR_DASHBOARD_MANAGER -up- TRIP_ORGANIZER : Manages trips
+    ROAD_WARRIOR_DASHBOARD_MANAGER -up- TRIP_SUMMARY_PROVIDER : Uses
+    ROAD_WARRIOR_DASHBOARD_MANAGER -up- VENDOR_MANAGEMENT : Uses
+}
+
+package "Data Analytics Management" {
+    DATA_ANALYTICS_MANAGEMENT -up- DATA_MANAGEMENT : User behavior tracking
+}
+
+package "Trip Summary Provider" {
+    TRIP_SUMMARY_PROVIDER -up-> DATA_ANALYTICS_MANAGEMENT : Provides analytical options
+    TRIP_SUMMARY_PROVIDER -up-> DATA_MANAGEMENT : Generates reports
+}
+
+package "Vendor Management" {
+    VENDOR_MANAGEMENT -down-> DATA_MANAGEMENT : Onboards/Adds/Removes vendors
+}
+
+package "Identity Management" {
+    IDENTITY_MANAGEMENT -right- API_GATEWAY : OAuth2 integration
+    IDENTITY_MANAGEMENT -right- USER_MANAGEMENT : User Management
+}
+
+package "Social Media Service" {
+    SOCIAL_MEDIA_SERVICE -down-> API_GATEWAY : Interfaces
+    SOCIAL_MEDIA_SERVICE -down-> ROAD_WARRIOR_DASHBOARD_MANAGER : Enables sharing
+}
+
+package "User Configuration Management" {
+    USER_CONFIGURATION_MGMT -right- API_GATEWAY : User-related settings
+}
+
+package "Data Management" {
+    DATA_MANAGEMENT -up- DATA_SYNC_MANAGER : Caching
+    DATA_MANAGEMENT -up- TRIP_ORGANIZER : Manages trip data
+}
+
+package "Trip Sync Manager" {
+    TRIP_SYNC_MANAGER -down-> TRAVEL_SERVICE_PROVIDER : Gets live data
+}
+
+package "Notification Manager" {
+    NOTIFICATION_MANAGER -right- DATA_MANAGEMENT : Handles notifications
+    NOTIFICATION_MANAGER -right- EVENTHUB_COMMUNICATION_MGR : Broadcast messaging
+}
+
+package "EventHub/Communication Manager" {
+    EVENTHUB_COMMUNICATION_MGR -down-> DATA_MANAGEMENT : Handles communications
+}
+
+package "User Management" {
+    USER_MANAGEMENT -right- API_GATEWAY : New user registration
+}
+
+package "API Gateway" {
+    API_GATEWAY -left-> TRAVEL_SERVICE_PROVIDER : Manages routing
+    API_GATEWAY -left-> SOCIAL_MEDIA_SERVICE : Manages routing
+    API_GATEWAY -left-> USER_CONFIGURATION_MGMT : Manages routing
+    API_GATEWAY -left-> USER_MANAGEMENT : Manages routing
+    API_GATEWAY -left-> DATA_MANAGEMENT : Manages routing
+    API_GATEWAY -left-> EVENTHUB_COMMUNICATION_MGR : Manages routing
+    API_GATEWAY -left-> NOTIFICATION_MANAGER : Manages routing
+    API_GATEWAY -left-> CUSTOMER_SERVICE_HELPDESK : Manages routing
+}
+
+package "Customer Service and Helpdesk Management" {
+    CUSTOMER_SERVICE_HELPDESK -up- TRAVEL_SERVICE_PROVIDER : Integrates with helpdesk
+}
 
 @enduml

@@ -44,3 +44,58 @@ Here are key architecture decisions and considerations
  - Implement a scalable and secure authentication system that can handle millions of user accounts. Consider federated authentication or Single Sign-On (SSO) solutions.
 
  By making these architecture decisions and continually monitoring and optimizing your system, you can build a highly scalable, reliable, and performant online trip management dashboard capable of supporting the specified user traffic and account scalability requirements. Additionally, consider using cloud services that provide scalable infrastructure to simplify the management of resources and scaling processes.
+
+
+ ## Key decisions for scaling
+
+ * Write separation
+ * Read replicas
+ * Cloud front with security
+ * Redis cache of read data
+
+## Possibilities
+
+* Multiple writes during festival times
+* Polling most of the times and more reads
+
+Write possibilities:
+
+* Add a trip
+* Modify/delete the reservation
+* Travel status changes
+
+Read possibilities:
+
+* Poll the status of reservation
+
+User 1:
+
+Flight 1
+Hotel 1
+Car 1
+
+User 2:
+
+Flight 1
+Hotel 1
+Car 2
+
+User 3:
+
+Flight 1
+Hotel 2
+Car 3
+
+Create a polling layer:
+
+Cache all the unique flight details
+Cache all the unique hotel details
+
+Event-broker
+
+Subscribers (trips) will get notified
+
+
+
+
+CQRS
