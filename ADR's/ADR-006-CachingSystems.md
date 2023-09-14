@@ -21,3 +21,6 @@ Need to pay a monthly subscription fee.
 To mitigate the cost of using Amazon ElastiCache for Redis Accelerator, we will use a managed service such as Amazon ElastiCache for Redis Accelerator. These services can help us to reduce our costs by automatically scaling the cache up and down based on our usage
 
 ## Next steps
+* Set up an Amazon ElastiCache for Redis Accelerator cluster.
+* Configure our microservices to use the cache.
+* Monitor the performance of the cache and make adjustments as needed.
