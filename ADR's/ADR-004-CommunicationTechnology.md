@@ -12,7 +12,7 @@ We have decided to use gRPC as our communication technology for microservices. g
 ## Consequences
 The main consequence are 
 * Learn a new technology. 
-* gRPC can be more complex to set up and use than other communication technologies.
+* gRPC can be more complex to setup and use than other communication technologies.
   However, gRPC offers a number of advantages over other technologies, such as its performance and reliability
 
 ## Mitigation
