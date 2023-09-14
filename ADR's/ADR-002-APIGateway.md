@@ -1,4 +1,4 @@
-# Title: ADR-002: APIGateway
+# Title: ADR-002: API Gateway
 ## Date: 2023-09-14
 ## Status: Accepted
 ## Context
