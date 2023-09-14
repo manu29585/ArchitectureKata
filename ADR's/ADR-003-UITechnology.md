@@ -19,7 +19,6 @@ To mitigate the risk of performance issues, we will use a number of techniques, 
 * Flutter is a popular framework with a large community, so there are plenty of resources available to help us learn.
 
 ## Next steps
-* Set up a development environment for React Native.
 * Learn the basics of Flutter.
 * Start developing our cross-platform app.
 * We will also need to monitor the performance of our Flutter and make adjustments as needed.
