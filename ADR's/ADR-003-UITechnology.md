@@ -8,7 +8,7 @@ We also want to consider the code reuse, UI components, learning curve, and nota
  
 ## Decision
 We have decided to choose Flutter as our UI technology. Flutter is a cross-platform UI framework developed by Google. It uses the Dart programming language, which is a modern, fast, and expressive language
-
+![UI Technology Comparison](UITechnologyComparison.PNG)
 ## Consequences
 The main consequence are 
 * learn a new framework and programming language. 
