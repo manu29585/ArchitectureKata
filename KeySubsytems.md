@@ -1,7 +1,8 @@
 # Key Sub systems
 
-![Subsystems-Interaction](./.media/Subsystems-Interaction.png)
+TBD old plntuml [Subsystems-Interaction](./.media/Subsystems-Interaction.png)
 
+![Subsystems-Interaction](./.media/Subsystems-Interaction.drawio.png)
 * Email Service:
   * Interfaces with different mailing services to get and scrape the user mails. Works as an aggregator for all the mail service provider.
 * Travel Service Provider: Interfaces with 3rd party travel providers{eg. make my trip} and air,hotel, car rental service provider. To get
@@ -45,3 +46,17 @@
   * Manages routing, load balancing etc and wil be the entry point for the UI layer for Web and Mobile app
 * CustomerServiceAndHelpdeskManagement
   * Integrates to various travel aggregators helpdesk
+
+## Usecases illustrated
+The interactions between these subsystems are detailed by the major usecases below
+
+### Register new user
+![001 Register new user](./.media/001-Register-new-user.png)
+### Login
+![002 Login](./.media/002-Login.png)
+### Add Email Whitelist/filters
+![004 Add Email Whitelistfilters](./.media/004-Add-Email-Whitelist-filters.png)
+### User AdReUp Trips
+![005 User AdReUp Trips](./.media/005-User-AdReUp-Trips.png)
+### Auto update via E-mail polling
+![006 Auto update via E-mail polling](./.media/006-Auto-update-via-E-mail-polling.png)
