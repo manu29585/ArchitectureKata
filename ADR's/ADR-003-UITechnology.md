@@ -7,6 +7,7 @@ We need to choose a UI technology that is compatible with Android, iOS, and web.
 
 ## Decision
 We have decided to choose React Native as our UI technology. React Native is a JavaScript framework that allows us to develop native mobile apps using React. This makes it easy to develop cross-platform apps that look and feel native on each platform.
+
 ## Consequences
 The main consequence of choosing React Native is that 
 * Need to learn a new framework. 
