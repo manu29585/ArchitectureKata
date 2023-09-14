@@ -18,3 +18,4 @@ We will use the following criteria to evaluate API gateways:
 *	Support: The API gateway must offer good support in case we need help.
 
 
+
