@@ -71,5 +71,8 @@ The interactions between these subsystems are detailed by the major usecases bel
 
 ### Analytics and End of Year Summary report
 
-### Raising helpdsk calls
+### Raising helpdesk calls
 
+***
+
+### [To go back](./README.md)
