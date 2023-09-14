@@ -25,7 +25,7 @@ Team Members
   - [Environment](#environment)
   - [NFR](#nfr)
   - [HighLevelArchitecture](#architecture)
-  - [KeySubsystems&Design]  
+  - [KeySubsystems&Design](./KeySubsytems.md)
   - [ADR]
     - [TypeOfArchitecture]
     - [CommunicationProtocol]
