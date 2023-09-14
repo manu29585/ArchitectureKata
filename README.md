@@ -91,12 +91,18 @@ Team Members
 ## Business Context
 
 In today's world when you plan for a trip, there are a lot of things to consider. It starts from booking the flight to the destination, to then booking a hotel for your stay. But how do you go from Airport to Hotel? Oh yes, you need car rentals as well.
+
 There are lot of options out there which provides the travelers the best possible options to do all the booking mentioned above like Expedia, Thomas Cook, MakeMyTrip and so on.
+
 Now, if there are already so many option available, why do we need yet another travel website?
 First of all, "The Road Warrior" is not just another travel website. It's a travel aggregation solution for all the travel needs.
-Let's think of one scenario, where as a user, you have booked your flight ticket from Expedia, booked your stay in AirBnb and have booked the car in Uber. On the day of travel you have to continuously keep switching between different apps to check your bookings.
+
+Let's think of one scenario, where as a user, you have booked your flight ticket from Expedia, booked your stay in Airbnb and have booked the car in Uber. On the day of travel you have to continuously keep switching between different apps to check your bookings.
+
 Well no longer, this is where "The Road Warrior" comes in. We will aggregate all your booking under one trip so you will never have to bother about checking the status of your booking in multiple applications.
+
 I know what you might be thinking, I have already gone through the hassle of booking the travel from multiple applications, I don't want to go through the trouble of adding these details to another app to get the updates. Don't worry, "The Road Warrior" has got you covered.
+
 Our app will automatically look for for travel booking and will add these under a single trip.
 We also provide data insights on the basis on past travel history and recommend accordingly.
 "The Road Warrior" is your  travel buddy.
