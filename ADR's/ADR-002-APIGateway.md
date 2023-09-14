@@ -17,7 +17,7 @@ We will use the following criteria to evaluate API gateways:
 *	Ease of use: The API gateway must be easy to use and configure.
 *	Support: The API gateway must offer good support in case we need help.
 
-
+![API Gateway Comparison](.media/APIGatewayComparison.png)
 ## Summary
 After evaluating the different API gateways, we have decided to use Kong. Kong is an open-source API gateway that is highly scalable, secure, and easy to use. It supports a variety of security features, including OAuth 2.0, JWT, and IP whitelisting. It can be integrated with a variety of other services, including databases, caching systems, and message brokers. It supports a variety of programming languages, including Go, Java, Python, and Ruby. It is free for up to 10,000 requests per month, and paid plans start at $0.0005 per request.
 ## Rationale
