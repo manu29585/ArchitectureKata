@@ -26,7 +26,7 @@ Criterias choose to evaluate API Gateway:
 
 Assuming 2 million active users per week, and that each user makes an average of 10 requests per week, then a total of 20 million requests per week
 
-![API Gateway Cost analysis]("API GatewayCostAnalysis.png")
+![API Gateway Cost analysis](APIGatewayCostAnalysis.PNG)
 
 ## Summary
 After evaluating the different API gateways, we have decided to use Kong. Kong is an open-source API gateway that is highly scalable, secure, and easy to use. It supports a variety of security features, including OAuth 2.0, JWT, and IP whitelisting. It can be integrated with a variety of other services, including databases, caching systems, and message brokers. It supports a variety of programming languages, including Go, Java, Python, and Ruby. It is free for up to 10,000 requests per month, and paid plans start at $0.0005 per request.
