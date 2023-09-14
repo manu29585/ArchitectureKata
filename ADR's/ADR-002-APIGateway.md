@@ -27,14 +27,14 @@ Assuming 2 million active users per week, and that each user makes an average of
 ![API Gateway Cost analysis](APIGatewayCostAnalysis.PNG)
 
 ## Consequences
-*Google Cloud API Gateway does not support as many programming languages like C,C++,Go,Rust,Assembly,Pascal,Modula-2.Fortran
-*Google Cloud API Gateway can be complex to set up and configure.
-*Google Cloud API Gateway may have performance issues under heavy load.
+* Google Cloud API Gateway does not support as many programming languages like C,C++,Go,Rust,Assembly,Pascal,Modula-2.Fortran
+* Google Cloud API Gateway can be complex to set up and configure.
+* Google Cloud API Gateway may have performance issues under heavy load.
 
 ## Mitigation Strategies
-*You can use an API client library to access Google Cloud API Gateway from any programming language 
-*There are a number of tutorials and documentation available to help you set up and configure Google Cloud API Gateway
-*Use a load balancer to distribute traffic across multiple Google Cloud API Gateway instances
+* You can use an API client library to access Google Cloud API Gateway from any programming language 
+* There are a number of tutorials and documentation available to help you set up and configure Google Cloud API Gateway
+* Use a load balancer to distribute traffic across multiple Google Cloud API Gateway instances
 ## Next Steps
 Google Cloud API Gateway will be considered for the Architecture design. We will also need to develop a security policy for our APIs and implement it.
 
