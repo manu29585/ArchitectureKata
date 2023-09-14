@@ -20,7 +20,7 @@ Criterias choose to evaluate API Gateway:
 *	Ease of use: The API gateway must be easy to use and configure.
 *	Support: The API gateway must offer good support in case we need help.
 
-![API Gateway Comparison](.\APIGatewayComparison.png)
+![API Gateway Comparison](./APIGatewayComparison.png)
 
 **Operating Cost **
 
