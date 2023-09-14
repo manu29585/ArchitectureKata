@@ -62,3 +62,14 @@ The interactions between these subsystems are detailed by the major usecases bel
 ![005 User AdReUp Trips](./.media/005-User-AdReUp-Trips.png)
 ### Auto update via E-mail polling
 ![006 Auto update via E-mail polling](./.media/006-Auto-update-via-E-mail-polling.png)
+
+### Adding new Vendor interfaces
+
+### Updates via 3rd party travel services
+
+### Notifications to user
+
+### Analytics and End of Year Summary report
+
+### Raising helpdsk calls
+
