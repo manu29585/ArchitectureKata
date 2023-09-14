@@ -3,26 +3,23 @@
 ## Status: Accepted
 
 ## Context
-We need to choose a UI technology that is compatible with Android, iOS, and web. This will allow us to develop a unified user experience across all platforms.
-
+We need to choose a UI technology that is compatible with Android, iOS, web and has good performance. This will allow us to develop a unified user experience across all platforms.
+We also want to consider the code reuse, UI components, learning curve, and notable features.
+ 
 ## Decision
-We have decided to choose React Native as our UI technology. React Native is a JavaScript framework that allows us to develop native mobile apps using React. This makes it easy to develop cross-platform apps that look and feel native on each platform.
+We have decided to choose Flutter as our UI technology. Flutter is a cross-platform UI framework developed by Google. It uses the Dart programming language, which is a modern, fast, and expressive language
 
 ## Consequences
-The main consequence of choosing React Native is that 
-* Need to learn a new framework. 
-* React Native apps may not be as performant as native apps that are developed using native languages such as Swift or Kotlin.
-  However, React Native apps have come a long way in terms of performance, and they are now comparable to native apps in many cases.
+The main consequence are 
+* learn a new framework and programming language. 
+* Flutter apps may not be as mature as React Native apps. However, Flutter is a rapidly evolving framework, and it is quickly gaining popularity.
 
 ## Mitigation
 To mitigate the risk of performance issues, we will use a number of techniques, such as:
-* React Native is a popular framework with a large community, so there are plenty of resources available to help us learn.
-* Using a caching strategy to store frequently accessed data in memory.
-* Using a lightweight JavaScript engine such as Hermes.
-* Optimizing our React Native code for performance.
+* Flutter is a popular framework with a large community, so there are plenty of resources available to help us learn.
 
 ## Next steps
 * Set up a development environment for React Native.
-* Learn the basics of React Native.
+* Learn the basics of Flutter.
 * Start developing our cross-platform app.
-* We will also need to monitor the performance of our React Native app and make adjustments as needed.
+* We will also need to monitor the performance of our Flutter and make adjustments as needed.
