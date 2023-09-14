@@ -19,3 +19,7 @@ The main consequence are
 Complexity of gRPC can be addressed by
 * Using a gRPC framework such as grpc-web or grpc-gateway to make it easier to use gRPC from different programming languages and platforms.
 * Using a gRPC observability tool such as OpenCensus or Jaeger to monitor and troubleshoot gRPC traffic
+## Next steps
+* Rampup on gRPC
+* Set up a development environment for gRPC 
+* Prototype using gRPC to communicate between  microservices
