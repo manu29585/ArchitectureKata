@@ -39,7 +39,8 @@ Team Members
     - [SystemLevelViews]
     - [CICD]
   - [Testability]
-    - [TestStrategy]
+    - [TestStrategy](./TestStrategy.md)
+    - [TestPyramid](./TestPyramid.md)
   - [CrossCuttingConcerns]
     - [Logging]
     - [Auditing]
