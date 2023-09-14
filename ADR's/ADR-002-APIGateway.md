@@ -22,7 +22,8 @@ Based on the evaluation of various criteria and operation cost Google Cloud API 
 ![API Gateway Comparison](APIGatewayComparison.png)
 
 <b><u>Operating Cost</u></b>
-Assuming 2 million active users per week, and that each user makes an average of 10 requests per week, then a total of 20 million requests per week
+Assuming 2 million active users per week, and that each user makes an average of 10 requests per week, then a total of 20 million requests per week.
+
 ![API Gateway Cost analysis](APIGatewayCostAnalysis.PNG)
 
 ## Consequences
