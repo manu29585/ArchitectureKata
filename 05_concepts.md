@@ -7,7 +7,7 @@
 In case the active user load is substantial, and trip notifications become a bottle neck for Dashboard Coordinator to handle. 
 A message queuing mechanism is introduced. Standard messge queing solutions like RabbitMQ or Kafka would be used within the Service boundaries.
 
-The same solution could be applied to other containers as well to do load balancing.
+The same solution could be applied to other containers as well.
 
 ### Read replicas
 
