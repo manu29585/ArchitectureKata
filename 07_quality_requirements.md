@@ -14,8 +14,9 @@
 
 Other topics to consider
 
-Cost: Since we are talking about having multiple services and these services will be deployed across the continents. The cost is something we need to keep in mind.  
-Configurable:
-Confidentiality:
-Integrity:
-Authentication
+- Cost:
+Since we are talking about having multiple services and these services will be deployed across the continents. The cost is something we need to keep in mind.  
+- Configurable:
+- Confidentiality:
+- Integrity:
+- Authentication

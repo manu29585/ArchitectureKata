@@ -13,3 +13,16 @@
 ### Security as a defacto standard
 
 ![Security in Build Pipeline](.media/security-build-pipeline.drawio.png)
+
+### Caching
+
+[Caching](caching.md)
+
+### Test Strategy
+
+[TestStrategy](TestStrategy.md)
+
+#### Test Pyramid
+
+[TestPyramid](TestPyramid.md)
+
