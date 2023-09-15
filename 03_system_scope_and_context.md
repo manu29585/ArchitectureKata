@@ -18,6 +18,44 @@
 
 ![Subsystems-Interaction](./.media/RoadWarrior_SubSystems-Subsystems_And_Interactions.png)
 
+## Usecase illustrations
+The interactions between these subsystems are detailed by the major usecases below
+
+### Register new user
+![001 Register new user](./.media/001-Register-new-user.png)
+### Login
+![002 Login](./.media/002-Login.png)
+1. On the Login/Authenticate call Identity Management checks User credentials with User Management
+3. Inform Dashboard Mgr of active user [will be useful for further use cases...]
+4. Return valid bearer token
+5. Valid bearer token is must for all further usecase calls
+
+**NOTE**: ApiGateway will reject all subsequent calls with invalid bearer tokens
+Also for simplicity sake in below diagrams The API Gateway is not explicity shown	
+
+### Add Email Whitelist/filters
+![004 Add Email Whitelistfilters](./.media/004-Add-Email-Whitelist-filters.png)
+1. User config management has the responsibility to add/update/get email and filter information
+
+NOTE: Use of User ConFig Management Service is illustarted in next interaction
+
+### Auto update via E-mail polling
+![006 Auto update via E-mail polling](./.media/006-Auto-update-via-E-mail-polling.png)
+
+1. Dashboard Manager activates Email Service for polling and scraping emails
+2. Email Service get users whitelist/filters thru User Config Management
+3. Informs Trip Organizer of trip/booking data from E-mail. E.g. data extracted PNR
+4. Trip Organizer will check if data is newer and commit
+
+**NOTE**: Trip Organizer also works with Trip Service Provider to get more details on the Trip/Booking
+![005-Get-All-Details-Thru3rd-Party](./.media/005-Get-All-Details-Thru3rd-Party.png)
+
+### User manually adds/updates Trips
+In this interaction Dashboard Manager directly interacts with Trip Organizer
+![005 User AdReUp Trips](./.media/005-User-AdReUp-Trips.png)
+
+## Subsystem Details
+
 * Email Service
 ![Email Service](./.media/RoadWarrior_SubSystems-Email_Polling_And_Whitelisting.jpg)
   * Interfaces with different mailing services to get and scrape the user mails. Works as an aggregator for all the mail service provider.
@@ -87,37 +125,3 @@
 * CustomerServiceAndHelpdeskManagement
  ![CustomerServiceAndHelpdeskManagement](./.media/RoadWarrior_SubSystems-Helpdesk_Management.jpg)
   * Integrates to various travel aggregators helpdesk
-
-## Use case illustration
-
-The interactions between these subsystems are detailed by the major use case below
-
-### Register new user
-
-![001 Register new user](./.media/001-Register-new-user.png)
-
-### Login
-
-![002 Login](./.media/002-Login.png)
-
-### Add Email Whitelist/filters
-
-![004 Add Email Whitelistfilters](./.media/004-Add-Email-Whitelist-filters.png)
-
-### User AdReUp Trips
-
-![005 User AdReUp Trips](./.media/005-User-AdReUp-Trips.png)
-
-### Auto update via E-mail polling
-
-![006 Auto update via E-mail polling](./.media/006-Auto-update-via-E-mail-polling.png)
-
-### Adding new Vendor interfaces
-
-### Updates via 3rd party travel services
-
-### Notifications to user
-
-### Analytics and End of Year Summary report
-
-### Raising helpdesk calls

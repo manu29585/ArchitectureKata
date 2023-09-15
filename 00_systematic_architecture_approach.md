@@ -22,7 +22,7 @@ The major components involved in the problem space are:
 
 - Use Cases: In this phase we define the interaction between the components.  
 
-** Note: The Product backlog in the SAD diagram is added for the sake of completeness. 
+**NOTE**: The Product backlog in the SAD diagram is added for the sake of completeness. 
 
 ## Architecture
 
