@@ -12,9 +12,9 @@ The purpose of this ADR is to document the decision to use a microservices archi
 
 The decision to use a microservices architecture was made after careful consideration of the following factors:
 
-The system is expected to be deployed in the cloud, and a microservices architecture will make it easier to scale the system to meet demand.
-The system is expected to be large and complex (Handling 2 million users in parallel), and a microservices architecture will allow us to break it down into smaller, more manageable components.
-The system is expected to evolve over time, and a microservices architecture will make it easier to add new features and functionality.
+* The system is expected to be deployed in the cloud, and a microservices architecture will make it easier to scale the system to meet demand.
+* The system is expected to be large and complex (Handling 2 million users in parallel), and a microservices architecture will allow us to break it down into smaller, more manageable components.
+* The system is expected to evolve over time, and a microservices architecture will make it easier to add new features and functionality.
 
 ## Consequences
 
@@ -36,6 +36,6 @@ The following mitigation strategies will be used to address the challenges of us
 
 The next steps are to:
 
-Complete the design of the microservices architecture.
-Implement the microservices architecture.
-Deploy the microservices architecture to the cloud.
+* Complete the design of the microservices architecture.
+* Implement the microservices architecture.
+* Deploy the microservices architecture to the cloud.

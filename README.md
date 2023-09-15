@@ -199,5 +199,7 @@ Authentication
   a) Contains NFR solutions
   b) This architecture contains the architecture for existing environment.
 
-- After going through this iterative process we decided to go ahead with the ![MicroserviceArchitecture](.media/ArchitectureStyleSheet.png).
-- For deciding the underlying architecture we created an [ADR](ADR's/ADR-001-MicroservicesArchitecture.md)
+- After going through this iterative process we decided to go ahead with the hybrid architecture i.e. Microservices & Event Driven
+![Architecture](.media/ArchitectureStyleSheet.png).
+
+- For deciding the underlying architecture we have created couple of ADR's i.e for [Microservices](ADR's/ADR-001-MicroservicesArchitecture.md) and for [Event Driven Architecture](Adr's/ADR-007-EventDrivenArchitecture.md)
