@@ -88,10 +88,11 @@ NOTE: Use of User ConFig Management Service is illustarted in next interaction
 3. Informs Trip Organizer of trip/booking data from E-mail. E.g. data extracted PNR
 4. Trip Organizer will check if data is newer and commit
 
-NOTE: Trip Organizer also works with Trip ervice Provider to get more details on the Trip/Booking
+NOTE: Trip Organizer also works with Trip Service Provider to get more details on the Trip/Booking
 ![005-Get-All-Details-Thru3rd-Party](./.media/005-Get-All-Details-Thru3rd-Party.png)
 
-### User AdReUp Trips
+### User manually adds/updates Trips
+In this interaction Dashboard Manager directly interacts with Trip Organizer
 ![005 User AdReUp Trips](./.media/005-User-AdReUp-Trips.png)
 
 ### Adding new Vendor interfaces
