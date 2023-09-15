@@ -55,6 +55,8 @@ Identify the key user scenarios and interactions that you want to simulate durin
 
 Determine specific performance goals and criteria that you want to achieve during load testing. This should include response time thresholds, throughput, and the number of concurrent users we want to simulate
 
+In case of road warrior dashboard, the peak scenarios to be tested would be for 2 million concurrent users, including a buffer spike of .5 million , as the total number of users quoted were 15 million users.
+
 ### Create Realistic Test Data
 
 Generate or obtain realistic test data that mimics actual usage patterns. This data should include various trip scenarios, reservation types, and user profiles.
