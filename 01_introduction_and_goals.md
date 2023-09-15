@@ -1,81 +1,4 @@
-# O'Reilly Architecture Kata September 2023
-
-This is a team submission for O'Reilly [Architecture Katas 2023](https://learning.oreilly.com/featured/architectural-katas/).
-
-Team Members
-
-- Manohar M
-- Sairam Sadanandan
-- Somaraj K
-- Shreyas Udupi
-- Shashwat Bajpai
-
-## Table of Contents
-
-- Introduction - Done
-- Business Context
-  - Requirements - Done
-  - Constraints - Done
-  - Risks  - Done
-  - Assumptions - Done
-- [ArchitectureApproach](#systematic-architecture-design) - Done
-  - [Idea](#idea) - Done
-  - [Requirements](#requirements)- Done
-  - [DomainModel](#domain-model) - Done
-  - [Environment](#environment) - Done
-  - [NFR](#nfr) - Done
-  - [HighLevelArchitecture](#architecture) - Done
-  - [KeySubsystems&Design](./KeySubsytems.md) - Done
-  - [ADR]
-    - [TypeOfArchitecture] - Done
-    - [CommunicationProtocol] - Done
-    - [DeploymentStrategy] 
-    - [APIGateway] - Done
-    - [UITechnology] - Done
-    - [Caching] - Done
-    - [Database] - Done
-  - [Diagram]
-    - [UseCases] - Done
-    - [DeploymentView]
-    - [SystemLevelViews] - Covered with high level arc
-    - [CICD] - Done
-  - [Testability]
-    - [TestStrategy](./TestStrategy.md) - Done
-    - [TestPyramid](./TestPyramid.md) - Done
-  - [CrossCuttingConcerns]
-  - [NFRRepresentation] - Choice of technology - Cloud, Istio, WAF, 
-    - [Logging] - Centralized logging
-    - [Auditing]
-    - [Monitoring]
-      - [AppInsights]
-    - [Security]
-      - [RateLimiting]
-      - [DataIntegrity]
-      - [Confidentiality] - How do we do profile protection, Analytics - How can we anonymize the data?
-
-## Target for 13/09
-
-- Business description and context setting
-- Sub system interaction with high level choice of technologies/tooling
-- High level architecture finalized
-
-## Target for 14/09
-
-- All sub systems High level design
-- Testability
-- ADR 
-  - API Gateway
-  - Choice of UI technologies - Xmarin/ts/js - How to make it compatible with Android/iOS/Web?
-  - Communication technology(rest/grpc/websocket) for micro service internal communication
-  - Choice of DB (AWS Aurora) (Because of less read latency < 20ms>)
-  - Choice of caching (Redis/Elasticache)
-
-## Target for 15/09
-
-- NFR handling and associated diagram representation
-- Final flow walkthrough
-
-## Introduction
+# Introduction and Goals
 
 "The Road Warrior" is an online trip management company which allows travelers to see all the of their existing reservations organized by the trip. Below is the list of key features which this application provides:
 
@@ -90,6 +13,12 @@ Team Members
 - Real-Time Updates: Ensures that the dashboard provides real-time updates on flight statuses, gate changes, delays, and other relevant information.
 
 - Notification System: Implements a notification system that alerts users about upcoming trips, booking confirmations, or changes to their reservations.
+
+## Stakeholders (Target users)
+
+- System Admin: Responsible for overall system administrator
+- Traveller: End user who will use the web/mobile application to organize his trip details
+- Product Manager: Interested in getting latest insights on the usage of application by various users to take further business decisions
 
 ## Business Context
 
@@ -146,51 +75,28 @@ Environments: In this phase we define the environment which impact the design su
 - Cloud deployment costs is acceptable and there is enough funding for business continuity
 - Software itself will developed in an incremental approach, planned releases every "Quarter" (Quarterly Releases - QR) and relevant MMP/MVP will be derived for the relevant QR by the product management
 
-## Systematic Architecture Design
+## High level requirements
 
-For this architecture challenge we have followed the systematic architecture design (SAD) technique. ![SAD](.media/SAD.png)
-The SAD is broadly categorized into 2 categories:
+- A new startup wants to build the next generation online trip management dashboard to allow travelers to see all of their existing reservations
+organized by trip either online (web) or through their mobile device.
+- System shall support traffic of 2 million active users/week
+- System shall support handling 15 million user accounts
 
-1) Problem Space
-2) Solution Space
-
-### Problem Space
-
-The major components involved in the problem space are:
-
-- Idea : In this phase we define the the customer need/wish.
-
-- Requirement & User Story: The is the phase we perform the requirement elicitation and document the requirement as for of user stories.
-
-- Domain Model : In this phase we use a common language to define the entities, problem domain and the interaction between them. The domain model will also include the constraints and boundaries
-
-
-
-- NFR : In this phase we define all the non-functional requirements such as quality scenarios, quality tree, architectural drivers.
-
-- Use Cases: In this phase we define the interaction between the components.  
-
-## Idea
-
-"The Road Warrior" is an online trip management company which allows travelers to see all the of their existing reservations organized by the trip.
-
-## Requirements
+## Detailed Requirements from user point of view
 
 The requirements are defined here [Requirements](Requirements.md)
 
-## Domain Model
+## Target Product
 
-- Entities: ![Entities](.media/Entities.png)
-
-- High Level System Overview: ![SystemOverview](.media/HighLevelSystemOverview.png)
-
-- System Domain Model: ![SystemDomainModel](.media/DomainModel.png)
-
-- User Interaction and Use Cases: ![UserInteractionAndUseCases](.media/UserInteractionAndUseCases.png)
-
-## Environment
-
-## NFR
+- System shall provide user with an option to authorize Road Warrior application to poll email for travel-related emails
+- System shall support to filter and whitelist travel email so that the trip details are imported from whitelisted emails automatically
+- System shall interface with the agency’s existing airline, hotel, and car rental interface system to update travel details (delays, cancellations, updates, gate changes, etc.).
+- System shall provide an user with the updates in less than 5 min to any of the changes in flight, hotel or car
+- System shall provide an option to enter the trip details manually using the PNR
+- System shall display the details grouped by trip, and once the trip is complete, the items should automatically be removed from the dashboard
+- System shall provide an option for the user to share the trip details in preferred social media platforms.
+- System shall provide option to export end-of-year summary reports with a wide range of metrics about their travel usage
+- System shall also gather analytical data from users trips for various purposes - travel trends, locations, airline and hotel vendor preferences, cancellation and update frequency.
 
 | S. No  | Characteristics | Status | Rationale |
 | ----------- | -----------| ----------- | ----------- |
@@ -200,7 +106,7 @@ The requirements are defined here [Requirements](Requirements.md)
 | 4) | Usability |  [x] | As the system should have rich UI for the dashboard/summary report we should make sure that we have arch functions defined for usability. |
 | 5) | Upgradeability |  [x] | We should be able to update and upgrade the system with additional feature. |
 | 6) | Extensibility |  [x] | As the system might have multi vendor, multi service support, we need to make sure that there is no vendor lock-in and the system is easily extensible. |
-| 7) | Security |  [x] | As this system stores user information we need to define architecture functions to handle security. |
+| 7) | Security |  [x] | As this system stores user information we need to define architecture functions to handle security. Authenticity of the distributed software must be ensured. All the servers shall be protected by device guard|
 
 Other topics to consider
 
@@ -209,26 +115,3 @@ Configurable:
 Confidentiality:
 Integrity:
 Authentication
-
-## Architecture
-
-- In order to chose the architecture, we followed the [Systematic Architecture Design](#systematic-architecture-design).
-- In this approach, we first started with the problem domain and then moved toward a solution domain.
-- In the solution domain, we worked on three different set of architectures.
-
-1) Draft Architecture
-  a) Draft architecture is a result of problem space.
-  b) Independent of Technology & interfaces.
-
-2) Reference Architecture
-  a) This includes technical details.
-  b) Uses the existing reference templates. For example, any other existing architecture which might have similar use cases.
-
-3) Baseline Architecture
-  a) Contains NFR solutions
-  b) This architecture contains the architecture for existing environment.
-
-- After going through this iterative process we decided to go ahead with the hybrid architecture i.e. Microservices & Event Driven
-![Architecture](.media/ArchitectureStyleSheet.png).
-
-- For deciding the underlying architecture we have created an ![ADR](Adr's/ADR-001-TypeOfArchitecture.md) i.e for Microservices and for Event Driven Architecture.
