@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e" pages="12">
     <diagram id="FvU1kRmfcHxbj2Ia0Bab" name="Subsystems and Interactions">
-        <mxGraphModel dx="2236" dy="1887" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1910" dy="1887" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="nIZAAOUnaYPXAP5Ir5Hx-0"/>
                 <mxCell id="nIZAAOUnaYPXAP5Ir5Hx-1" parent="nIZAAOUnaYPXAP5Ir5Hx-0"/>
@@ -747,7 +747,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="IIxXujka_KvexE_py-FP" name="Email polling and whitelisting">
-        <mxGraphModel dx="2333" dy="1967" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2236" dy="1887" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="KjK2vCFKu7bdBWW6z9SQ-0"/>
                 <mxCell id="KjK2vCFKu7bdBWW6z9SQ-1" parent="KjK2vCFKu7bdBWW6z9SQ-0"/>
@@ -865,7 +865,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="5S6npsuoXyy1o5mtggsG" name="Share Trip details">
-        <mxGraphModel dx="1438" dy="1007" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1786" dy="1187" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="eKTCY_fnsuxUpBXSg4IN-0"/>
                 <mxCell id="eKTCY_fnsuxUpBXSg4IN-1" parent="eKTCY_fnsuxUpBXSg4IN-0"/>
@@ -993,7 +993,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="0ueEsxvhpwv1oZAHjAzB" name="User Login/Registration">
-        <mxGraphModel dx="1438" dy="1007" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1786" dy="1187" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="LWmfccBYrzp-fE7DmuYX-0"/>
                 <mxCell id="LWmfccBYrzp-fE7DmuYX-1" parent="LWmfccBYrzp-fE7DmuYX-0"/>
@@ -2035,7 +2035,7 @@
         </mxGraphModel>
     </diagram>
     <diagram id="NSj5M923b-QdBCdIlXF0" name="Interaction by Use case">
-        <mxGraphModel dx="2213" dy="1956" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1460" dy="1187" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -2295,7 +2295,7 @@
                 <mxCell id="lD5EOdkUDfvSU6XCc7FX-73" value="4.&amp;nbsp;inform of active &lt;br&gt;user login" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="lD5EOdkUDfvSU6XCc7FX-69" target="lD5EOdkUDfvSU6XCc7FX-72">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="lD5EOdkUDfvSU6XCc7FX-69" value="User&amp;nbsp;&lt;br&gt;Management" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                <mxCell id="lD5EOdkUDfvSU6XCc7FX-69" value="Identity&lt;br&gt;Management" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
                     <mxGeometry x="210" y="862.5" width="120" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="lD5EOdkUDfvSU6XCc7FX-72" value="Dashboard Manager" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
@@ -2303,27 +2303,100 @@
                 </mxCell>
                 <mxCell id="lD5EOdkUDfvSU6XCc7FX-74" value="Add/Update&lt;br&gt;Email&lt;br&gt;Filters" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="lD5EOdkUDfvSU6XCc7FX-77" target="lD5EOdkUDfvSU6XCc7FX-82" parent="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="60" y="1110" as="sourcePoint"/>
+                        <mxPoint x="-120" y="1097" as="sourcePoint"/>
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="lD5EOdkUDfvSU6XCc7FX-77" value="&lt;font color=&quot;#000000&quot;&gt;UI&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#006600;" vertex="1" parent="1">
-                    <mxGeometry x="20" y="1082.5" width="70" height="55" as="geometry"/>
+                    <mxGeometry x="-160" y="1069.5" width="70" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="lD5EOdkUDfvSU6XCc7FX-85" value="Informs" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="lD5EOdkUDfvSU6XCc7FX-78" target="lD5EOdkUDfvSU6XCc7FX-84">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="lD5EOdkUDfvSU6XCc7FX-78" value="User Config Management" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-                    <mxGeometry x="430" y="1080" width="120" height="55" as="geometry"/>
+                    <mxGeometry x="250" y="1067" width="120" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="lD5EOdkUDfvSU6XCc7FX-79" value="Informs" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="lD5EOdkUDfvSU6XCc7FX-82" target="lD5EOdkUDfvSU6XCc7FX-78" parent="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="lD5EOdkUDfvSU6XCc7FX-82" value="Dashboard Manager" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-                    <mxGeometry x="210" y="1082.5" width="120" height="55" as="geometry"/>
+                    <mxGeometry x="30" y="1069.5" width="120" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="lD5EOdkUDfvSU6XCc7FX-84" value="Database Management" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-                    <mxGeometry x="610" y="1080" width="120" height="55" as="geometry"/>
+                    <mxGeometry x="430" y="1067" width="120" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-11" value="Add/Update&lt;br&gt;Email&lt;br&gt;Filters" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="3ReP451jEFOQQT-hbaCT-12" target="3ReP451jEFOQQT-hbaCT-16" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-120" y="1211" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-12" value="&lt;font color=&quot;#000000&quot;&gt;UI&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#006600;" vertex="1" parent="1">
+                    <mxGeometry x="-160" y="1183.5" width="70" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-13" value="4. Informs" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="3ReP451jEFOQQT-hbaCT-14" target="3ReP451jEFOQQT-hbaCT-17" parent="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-14" value="Trip Advisor" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="1181" width="120" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-15" value="1. activates" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="3ReP451jEFOQQT-hbaCT-16" target="3ReP451jEFOQQT-hbaCT-18" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="237" y="1315" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="185" y="1221"/>
+                            <mxPoint x="200" y="1283"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-16" value="Dashboard Manager" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="1183.5" width="120" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-17" value="Database Management" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="430" y="1181" width="120" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-19" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3ReP451jEFOQQT-hbaCT-18" target="3ReP451jEFOQQT-hbaCT-14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-21" value="2. Get whitelist/&lt;br&gt;Filters" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3ReP451jEFOQQT-hbaCT-18" target="3ReP451jEFOQQT-hbaCT-20">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-22" value="3. trip info&lt;br&gt;found during scaping" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3ReP451jEFOQQT-hbaCT-18" target="3ReP451jEFOQQT-hbaCT-14">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-18" value="Email Service" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="1288" width="120" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-20" value="User Config Management" style="whiteSpace=wrap;html=1;fontFamily=Comic Sans MS;fillColor=#d5e8d4;strokeColor=#82b366;rounded=1;shadow=0;sketch=1;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="1420.5" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-23" value="3. add/updates" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3ReP451jEFOQQT-hbaCT-24" target="3ReP451jEFOQQT-hbaCT-25">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-29" value="1. Get all details for &lt;br&gt;PNR ***" style="edgeStyle=none;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="3ReP451jEFOQQT-hbaCT-24" target="3ReP451jEFOQQT-hbaCT-28">
+                    <mxGeometry x="0.2482" y="-8" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="251" y="1631"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-24" value="Trip Advisor" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="233" y="1522" width="120" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-25" value="Database Management" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+                    <mxGeometry x="458" y="1522" width="120" height="55" as="geometry"/>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-27" value="2. returns found updates" style="edgeStyle=none;html=1;entryX=0.75;entryY=1;entryDx=0;entryDy=0;exitX=0.842;exitY=0.018;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="3ReP451jEFOQQT-hbaCT-28" target="3ReP451jEFOQQT-hbaCT-24">
+                    <mxGeometry x="0.5722" y="-10" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="350" y="1653"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3ReP451jEFOQQT-hbaCT-28" value="Email Service" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;sketch=1;fontFamily=Comic Sans MS;fontSize=12;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="233" y="1709" width="120" height="55" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
