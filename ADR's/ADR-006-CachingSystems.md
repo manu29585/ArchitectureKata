@@ -17,7 +17,7 @@ Amazon ElastiCache for Redis Accelerator is paid services and it has the below a
 * Scalability: Amazon ElastiCache for Redis Accelerator can scale to meet your needs, even for high-traffic applications.
 * Reliability: Amazon ElastiCache for Redis Accelerator is highly reliable and backed by Amazon's commitment to uptime.
 
-![Caching System](CachingSystem.png)
+![Caching System](../.media/CachingSystem.png)
 
 ## Consequences
 

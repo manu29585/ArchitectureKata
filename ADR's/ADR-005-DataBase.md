@@ -13,7 +13,7 @@ We need to choose a database for our microservice architecture, which will have 
 Considering that information stored in Road Warrior is structured with fixed schema It is decided to use Amazon Aurora Serverless as our database for microservice architecture.
 Amazon Aurora Serverless is a fully managed MySQL and PostgreSQL compatible relational database that is designed for scalability, reliability, and performance. It is also a pay-as-you-go service, so we only pay for the resources that we use.
 
-![DB Comparison](DBComparison.png)
+![DB Comparison](../.media/DBComparison.png)
 
 ## Consequences
 

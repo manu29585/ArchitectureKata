@@ -12,7 +12,7 @@ We need to choose communication technologies for our microservices to communicat
 
 We have decided to use gRPC as our communication technology for microservices. gRPC is a high-performance, open-source RPC framework that is built on top of HTTP/2.
 
-![Communication Technology Comparison](CommunicationTechnologyComparison.png)
+![Communication Technology Comparison](../.media/CommunicationTechnologyComparison.png)
 
 ## Consequences
 
