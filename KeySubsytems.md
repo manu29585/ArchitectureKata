@@ -83,6 +83,14 @@ NOTE: Use of User ConFig Management Service is illustarted in next interaction
 ### Auto update via E-mail polling
 ![006 Auto update via E-mail polling](./.media/006-Auto-update-via-E-mail-polling.png)
 
+1. Dashboard Manager activates Email Service for polling and scraping emails
+2. Email Service get users whitelist/filters thru User Config Management
+3. Informs Trip Organizer of trip/booking data from E-mail. E.g. data extracted PNR
+4. Trip Organizer will check if data is newer and commit
+
+NOTE: Trip Organizer also works with Trip ervice Provider to get more details on the Trip/Booking
+![005-Get-All-Details-Thru3rd-Party](./.media/005-Get-All-Details-Thru3rd-Party.png)
+
 ### User AdReUp Trips
 ![005 User AdReUp Trips](./.media/005-User-AdReUp-Trips.png)
 
