@@ -8,6 +8,8 @@
 
 The purpose of this ADR is to document the decision to use an event driven architecture for the new The Road Warrior Application.
 
+![EventDriven-PubSub](./.media/../../.media/EventDriven-PubSub.png)
+
 ## Decision
 
 The decision to use an event driven architecture was made after careful consideration of the following factors:
