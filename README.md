@@ -202,4 +202,4 @@ Authentication
 - After going through this iterative process we decided to go ahead with the hybrid architecture i.e. Microservices & Event Driven
 ![Architecture](.media/ArchitectureStyleSheet.png).
 
-- For deciding the underlying architecture we have created couple of ADR's i.e for [Microservices](ADR's/ADR-001-MicroservicesArchitecture.md) and for [Event Driven Architecture](Adr's/ADR-007-EventDrivenArchitecture.md)
+- For deciding the underlying architecture we have created an ![ADR](Adr's/ADR-001-TypeOfArchitecture.md) i.e for Microservices and for Event Driven Architecture.
