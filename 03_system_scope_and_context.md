@@ -6,10 +6,6 @@
 
 ![SystemDomainModel](.media/DomainModel.png)
 
-## High Level System Overview
-
-![SystemOverview](.media/HighLevelSystemOverview.png)
-
 ## High level User Interaction and Use Cases
 
 ![UserInteractionAndUseCases](.media/UserInteractionAndUseCases.png)
@@ -18,28 +14,36 @@
 
 ![Subsystems-Interaction](./.media/RoadWarrior_SubSystems-Subsystems_And_Interactions.png)
 
-## Usecase illustrations
-The interactions between these subsystems are detailed by the major usecases below
+## Use case illustrations
+
+The interactions between these subsystems are detailed by the major use cases below
 
 ### Register new user
+
 ![001 Register new user](./.media/001-Register-new-user.png)
+
 ### Login
+
 ![002 Login](./.media/002-Login.png)
-1. On the Login/Authenticate call Identity Management checks User credentials with User Management
-3. Inform Dashboard Mgr of active user [will be useful for further use cases...]
-4. Return valid bearer token
-5. Valid bearer token is must for all further usecase calls
+
+* On the Login/Authenticate call Identity Management checks User credentials with User Management
+* Inform Dashboard Mgr of active user [will be useful for further use cases...]
+* Return valid bearer token
+* Valid bearer token is must for all further use case calls
 
 **NOTE**: ApiGateway will reject all subsequent calls with invalid bearer tokens
-Also for simplicity sake in below diagrams The API Gateway is not explicity shown	
+Also for simplicity sake in below diagrams The API Gateway is not explicitly shown
 
 ### Add Email Whitelist/filters
-![004 Add Email Whitelistfilters](./.media/004-Add-Email-Whitelist-filters.png)
+
+![004 Add Email Whitelist filters](./.media/004-Add-Email-Whitelist-filters.png)
+
 1. User config management has the responsibility to add/update/get email and filter information
 
-NOTE: Use of User ConFig Management Service is illustarted in next interaction
+NOTE: Use of User ConFig Management Service is illustrated in next interaction
 
 ### Auto update via E-mail polling
+
 ![006 Auto update via E-mail polling](./.media/006-Auto-update-via-E-mail-polling.png)
 
 1. Dashboard Manager activates Email Service for polling and scraping emails
@@ -51,6 +55,7 @@ NOTE: Use of User ConFig Management Service is illustarted in next interaction
 ![005-Get-All-Details-Thru3rd-Party](./.media/005-Get-All-Details-Thru3rd-Party.png)
 
 ### User manually adds/updates Trips
+
 In this interaction Dashboard Manager directly interacts with Trip Organizer
 ![005 User AdReUp Trips](./.media/005-User-AdReUp-Trips.png)
 
@@ -60,7 +65,7 @@ In this interaction Dashboard Manager directly interacts with Trip Organizer
 ![Email Service](./.media/RoadWarrior_SubSystems-Email_Polling_And_Whitelisting.jpg)
   * Interfaces with different mailing services to get and scrape the user mails. Works as an aggregator for all the mail service provider.
 
-* Travel Service Provider
+* Travel Service provider
 ![Travel Service Provider](./.media/RoadWarrior_SubSystems-Travel_Service_Provider.jpg)
 * Interfaces with 3rd party travel providers{eg. make my trip} and air,hotel, car rental service provider. To get
   * more details on PNR.

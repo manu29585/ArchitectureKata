@@ -17,8 +17,6 @@ The primary objectives of testing the Road Warrior Application are:
 
 The testing will include the following levels:
 
-We will conduct the following levels of testing:
-
 * Unit Testing: Developers will perform unit tests for individual dashboard components and functions.
 * Integration Testing: Validate the interactions between the dashboard and connected services.
 * System Testing: Evaluate the complete dashboard functionality, including web and mobile interfaces.
@@ -34,14 +32,16 @@ We will perform various types of testing, including:
 * Security Testing: Identify and address security vulnerabilities and encryption of sensitive data.
 * Compatibility Testing: Verify compatibility across popular web browsers, mobile devices, and operating systems.
 * Regression Testing: Ensure new changes do not negatively impact existing functionality.
+* Load Testing: To ensure that the system is validated to handle peak loads
+* Stability testing: Run long running tests and assess that the system is optimally performing after weeks of usage
 
 ## Test Approach
 
 The testing approach will be as follows:
 
-* Manual Testing: For functional, usability, and exploratory testing.
-* Automation Testing: For regression, performance, and repetitive tasks.
-* Continuous Testing: Integrate testing into the CI/CD pipeline for automated testing.
+* Manual Testing: For usability, and exploratory testing
+* Automation Testing: For functional, regression, performance, and repetitive tasks
+ and Integrate testing into the CI/CD pipeline for automated testing
 * Risk-Based Testing: Prioritize testing based on a risk assessment, focusing on critical areas.
 * Test Data Management: Ensure the availability of relevant test data representing different user scenarios.
 
@@ -79,9 +79,10 @@ Continuously assess and update risk analysis throughout the testing process.
 Regularly communicate test progress and results to stakeholders.
 Provide test summary reports after each testing phase.
 Document and track defects using a designated defect tracking system.
+Establish automated dashboard with various metrics
 
 ## Continuous Improvement
 
 Conduct post-test reviews to identify areas for improvement in testing processes.
 Update the test strategy based on lessons learned.
-This test strategy provides a foundation for planning, executing, and managing testing activities for your online trip management application, ensuring that it meets quality and performance standards across web and mobile platforms. Customize this strategy to suit the specific needs of your project.
+This test strategy provides a foundation for planning, executing, and managing testing activities for your online trip management application, ensuring that it meets quality and performance standards across web and mobile platforms

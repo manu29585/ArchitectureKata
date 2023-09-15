@@ -1,3 +1,5 @@
+# User requirements
+
 ## Functional requirements
 
 * User should be able to add an existing trip information manually
@@ -30,7 +32,7 @@
 
 * When the air travel gets delayed the dashboard shall update within 5 mins
 * Should be able to automatically update app without additional user intervention
-* Should be able to handle sudden spike in peak days ( friday)
+* Should be able to handle sudden spike in peak days
 * Application should be available all the time ( availability)
 * Application should have active users backup in time of downtime ( availability)
 * Auditing functionality to track the activity of user(delete /modify)

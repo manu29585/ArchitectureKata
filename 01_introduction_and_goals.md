@@ -17,7 +17,7 @@
 ## Stakeholders (Target users)
 
 - System Admin: Responsible for overall system administrator
-- Traveller: End user who will use the web/mobile application to organize his trip details
+- Traveler: End user who will use the web/mobile application to organize his trip details
 - Product Manager: Interested in getting latest insights on the usage of application by various users to take further business decisions
 
 ## Business Context
@@ -57,6 +57,8 @@ We also provide data insights on the basis on past travel history and recommend 
 - Cloud deployments strategy with blue-green should address downtime requirements
 - User explicitly grants authorization to scrape emails
 - Cloud deployment costs is acceptable and there is enough funding for business continuity
+- Standard REST/websocket will be used as communication methodology with Client
+- All "To be clarified" requirements will be addressed at a later point of time
 
 ### Business Considerations
 
@@ -94,6 +96,6 @@ The requirements are defined here [Requirements](Requirements.md)
 - System shall provide an user with the updates in less than 5 min to any of the changes in flight, hotel or car
 - System shall provide an option to enter the trip details manually using the PNR
 - System shall display the details grouped by trip, and once the trip is complete, the items should automatically be removed from the dashboard
-- System shall provide an option for the user to share the trip details in preferred social media platforms.
+- System shall provide an option for the user to share the trip details in preferred social media platforms
 - System shall provide option to export end-of-year summary reports with a wide range of metrics about their travel usage
-- System shall also gather analytical data from users trips for various purposes - travel trends, locations, airline and hotel vendor preferences, cancellation and update frequency.
+- System shall also gather analytical data from users trips for various purposes - travel trends, locations, airline and hotel vendor preferences, cancellation and update frequency
