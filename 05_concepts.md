@@ -4,15 +4,15 @@
 
 ### Event queueing
 
-In case the active user load is substantial, and trip notifications become a bottle neck for Dashboard Coordinator to handle. 
-A message queuing mechanism is introduced. Standard messge queing solutions like RabbitMQ or Kafka would be used within the Service boundaries.
+In case the active user load is substantial, and trip notifications become a bottle neck for Dashboard Coordinator to handle.
+A message queuing mechanism is introduced. Standard message queuing solutions like RabbitMQ or Kafka would be used within the Service boundaries.
 
 The same solution could be applied to other containers as well.
 
 ### Read replicas
 
-On recieving trip details; services like Trip Organizer shall also cache the updates to a in-memory read replica.
-This read replica will be used to improve the user experience, for e.g. during the usecases when trip details need to be updated.
+On receiving trip details; services like Trip Organizer shall also cache the updates to a in-memory read replica.
+This read replica will be used to improve the user experience, for e.g. during the use cases when trip details need to be updated.
 
 ![High level architecture](.media/Message-Queueing-In-Dashboard-Coordinator.png)
 
@@ -26,10 +26,6 @@ This read replica will be used to improve the user experience, for e.g. during t
 
 ![Security in Build Pipeline](.media/security-build-pipeline.drawio.png)
 
-### Caching
-
-[Caching](caching.md)
-
 ### Test Strategy
 
 [TestStrategy](TestStrategy.md)
@@ -37,4 +33,3 @@ This read replica will be used to improve the user experience, for e.g. during t
 #### Test Pyramid
 
 [TestPyramid](TestPyramid.md)
-
