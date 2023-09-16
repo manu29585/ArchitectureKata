@@ -20,3 +20,21 @@ Since we are talking about having multiple services and these services will be d
 - Confidentiality:
 - Integrity:
 - Authentication
+
+## Quality attribute scenarios
+
+![Availability](../.media/../ArchitectureKata/.media/QualityScenario-Availability.png)
+
+-----------------
+
+![Scalability](../.media/../ArchitectureKata/.media/QualityScenario-Scalability.png)
+
+-----------------
+
+![Performance](../.media/../ArchitectureKata/.media/QualityScenario-Performance.png)
+
+-----------------
+
+![Usability](../.media/../ArchitectureKata/.media/QualityScenario-Usability.png)
+
+-----------------
