@@ -16,6 +16,18 @@ This read replica will be used to improve the user experience, for e.g. during t
 
 ![High level architecture](.media/Message-Queueing-In-Dashboard-Coordinator.png)
 
+--------------
+
+### Test Strategy
+
+[TestStrategy](TestStrategy.md)
+
+### Test Pyramid
+
+[TestPyramid](TestPyramid.md)
+
+--------------
+
 ## Build and security by design
 
 ### CI-CD pipeline design for automated tests and deployment
@@ -25,11 +37,3 @@ This read replica will be used to improve the user experience, for e.g. during t
 ### Security as a defacto standard
 
 ![Security in Build Pipeline](.media/security-build-pipeline.drawio.png)
-
-### Test Strategy
-
-[TestStrategy](TestStrategy.md)
-
-#### Test Pyramid
-
-[TestPyramid](TestPyramid.md)
