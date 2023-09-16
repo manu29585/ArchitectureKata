@@ -4,7 +4,10 @@ This is a team submission for O'Reilly [Architecture Katas 2023](https://learnin
 
 ## Team Name & Logo
 
+--------
 ![Team Logo](.media/ByteMe_TeamLogo.png)
+
+--------
 
 ## Team Members
 
@@ -13,6 +16,12 @@ This is a team submission for O'Reilly [Architecture Katas 2023](https://learnin
 - Sairam Sadanandan
 - Somaraj K
 - Shashwat Bajpai
+
+--------
+
+![Road Warriors Logo](.media/RoadWarrriorLogo.png)
+
+--------
 
 **Note:** We've used systematic architecture approach to arrive at solution to the provided problem. Architecture is documented based on arc-42 template and files are also named accordingly. Approach itself is explained in [Architecture Approach](00_systematic_architecture_approach.md).
 

@@ -1,5 +1,7 @@
 # Introduction and Goals
 
+![Road Warriors Logo](.media/RoadWarrriorLogo.png)
+
 "The Road Warrior" is an online trip management company which allows travelers to see all the of their existing reservations organized by the trip. Below is the list of key features which this application provides:
 
 - User-Friendly Dashboard: Provides an intuitive and user-friendly dashboard that allows travelers to easily view, manage, and organize their reservations.
