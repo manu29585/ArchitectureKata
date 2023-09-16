@@ -28,7 +28,7 @@ The major components involved in the problem space are:
 
 ### Incremental software architecture
 
-* In this approach, we first started with the problem domain and then moved toward a solution domain.
+* In this approach, we first started with the problem domain and then moved towards solution domain.
 * In the solution domain, we worked on three different set of architectures.
 
 ## Draft Architecture
