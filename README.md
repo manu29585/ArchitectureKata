@@ -4,7 +4,7 @@ This is a team submission for O'Reilly [Architecture Katas 2023](https://learnin
 
 ## Team Name & Logo
 
-![Team Logo](../.media/../ArchitectureKata/.media/ByteMe_TeamLogo.png)
+![Team Logo](.media/ByteMe_TeamLogo.png)
 
 ## Team Members
 
