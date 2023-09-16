@@ -27,5 +27,5 @@ This is a team submission for O'Reilly [Architecture Katas 2023](https://learnin
 - [Quality requirements - NFR](07_quality_requirements.md)
 - [Technical risks](08_technical_risks.md)
 - [Requirements - Elicited](Requirements.md)
-- [Test pyramid](TestPyramid.md)
 - [Test strategy](TestStrategy.md)
+- [Test pyramid](TestPyramid.md)
