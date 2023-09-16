@@ -50,4 +50,4 @@ The major components involved in the problem space are:
 
 ![Architecture](.media/ArchitectureStyleSheet.png).
 
-* For deciding the underlying architectures (i.e. Microservices and Event based) we have created an [ADR](ADR's/ADR-001-TypeOfArchitecture.md)
+* For deciding the underlying architectures (i.e. Microservices and Event based) we have created an [ADR](ADR/ADR-001-TypeOfArchitecture.md)
