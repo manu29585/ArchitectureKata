@@ -23,7 +23,7 @@ Since we are talking about having multiple services and these services will be d
 
 ## Quality attribute scenarios
 
-![Availability](.media/ArchitectureKata/.media/QualityScenario-Availability.png)
+![Availability](.media/QualityScenario-Availability.png)
 
 -----------------
 
