@@ -40,7 +40,7 @@ Also for simplicity sake in below diagrams The API Gateway is not explicitly sho
 
 1. User config management has the responsibility to add/update/get email and filter information
 
-NOTE: Use of User ConFig Management Service is illustrated in next interaction
+**NOTE**: Use of User Config Management Service is illustrated in next interaction
 
 ### Auto update via E-mail polling
 
