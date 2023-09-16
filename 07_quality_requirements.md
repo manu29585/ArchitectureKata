@@ -23,18 +23,18 @@ Since we are talking about having multiple services and these services will be d
 
 ## Quality attribute scenarios
 
-![Availability](../.media/../ArchitectureKata/.media/QualityScenario-Availability.png)
+![Availability](.media/ArchitectureKata/.media/QualityScenario-Availability.png)
 
 -----------------
 
-![Scalability](../.media/../ArchitectureKata/.media/QualityScenario-Scalability.png)
+![Scalability](.media/QualityScenario-Scalability.png)
 
 -----------------
 
-![Performance](../.media/../ArchitectureKata/.media/QualityScenario-Performance.png)
+![Performance](.media/QualityScenario-Performance.png)
 
 -----------------
 
-![Usability](../.media/../ArchitectureKata/.media/QualityScenario-Usability.png)
+![Usability](.media/QualityScenario-Usability.png)
 
 -----------------
