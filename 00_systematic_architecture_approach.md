@@ -24,7 +24,9 @@ The major components involved in the problem space are:
 
 **NOTE**: The Product backlog in the SAD diagram is added for the sake of completeness.
 
-## Incremental software architecture
+### Solution Space
+
+### Incremental software architecture
 
 * In this approach, we first started with the problem domain and then moved toward a solution domain.
 * In the solution domain, we worked on three different set of architectures.
