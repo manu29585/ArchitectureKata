@@ -8,3 +8,4 @@
 |ADR-004| Communication Technology | [Communication Technology](Adr's/ADR-004-CommunicationTechnology.md) |
 |ADR-005| Database | [Database](Adr's/ADR-005-DataBase.md) |
 |ADR-006| Caching System | [Caching System](Adr's/ADR-006-CachingSystems.md) |
+|ADR-007| Deployment strategy | [Deployment strategy](Adr's/ADR-007-DeploymentStrategy.md) |
