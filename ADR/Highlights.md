@@ -1,0 +1,24 @@
+# Highlights
+
+- Systematic architecture and design approach
+  - Problem space
+  - Use case illustrations
+  - Domain model and System context
+- Architecture
+  - Multi Location availability
+  - Scalability
+    - What are the aspects addressing it?
+  - Other important quality attributes
+    - Performance
+    - Availability
+    - ?
+- Development aspects
+  - TDD and BDD?
+  - Testability
+    - Strategy
+    - Load test
+  - Security
+    - Data Integrity?
+  - CI/CD pipeline
+- Final Conclusion
+  - Closing statement
