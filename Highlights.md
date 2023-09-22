@@ -27,7 +27,7 @@
 
 1. Introduction
    - Business Case Overview (Context)
-   - Architecture overview of our "The Road Warrior".
+   - Architecture overview of "The Road Warrior".
 
 2. Systematic architecture and design approach
    - Problem Space
